@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liam W — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Montserrat:wght@400;600;700&family=Roboto+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Scroll progress gradient line -->
+  <div class="scroll-line" id="scrollLine" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__logo">liam<span class="nav__logo-accent">w</span>.fyi</div>
+    <ul class="nav__links">
+      <li><a class="nav__link" href="#biography">About</a></li>
+      <li><a class="nav__link" href="#skills">Skills</a></li>
+      <li><a class="nav__link" href="#interests">Interests</a></li>
+      <li><a class="nav__link" href="#projects">Projects</a></li>
+    </ul>
+  </nav>
+
+  <main class="main">
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero__content">
+        <p class="hero__greeting">Hi, I'm</p>
+        <h1 class="hero__name heading-gradient">Liam W</h1>
+        <p class="hero__tagline">Developer &amp; Creator</p>
+        <a href="#biography" class="btn btn--primary">Learn More</a>
+      </div>
+      <div class="hero__decoration" aria-hidden="true">
+        <div class="hero__glow"></div>
+      </div>
+    </section>
+
+    <!-- Biography -->
+    <section class="section biography" id="biography">
+      <div class="section__container">
+        <h2 class="section__heading heading-gradient">Biography</h2>
+
+        <div class="biography__grid">
+          <div class="biography__card">
+            <h3 class="biography__subheading">Background</h3>
+            <p class="biography__text">
+              I'm a passionate developer with a love for building elegant, performant
+              web experiences. Starting with small scripting projects, I've grown into
+              a full-stack developer who enjoys every layer of the stack.
+            </p>
+          </div>
+
+          <div class="biography__card">
+            <h3 class="biography__subheading">Experience</h3>
+            <p class="biography__text">
+              Over the years I've worked on personal projects, open-source contributions,
+              and client work spanning front-end interfaces, back-end APIs, and
+              automation tooling.
+            </p>
+          </div>
+
+          <div class="biography__card">
+            <h3 class="biography__subheading">Personal Interests</h3>
+            <p class="biography__text">
+              Outside of coding I enjoy exploring new technologies, contributing to the
+              developer community, and continuously refining my craft through reading
+              and experimentation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+      <div class="section__container">
+        <h2 class="section__heading heading-gradient">Skills</h2>
+
+        <div class="skills__grid">
+          <div class="skills__category">
+            <h3 class="skills__category-title">Languages</h3>
+            <ul class="skills__list">
+              <li class="skills__item">JavaScript / TypeScript</li>
+              <li class="skills__item">Python</li>
+              <li class="skills__item">HTML &amp; CSS</li>
+              <li class="skills__item">Bash / Shell</li>
+            </ul>
+          </div>
+
+          <div class="skills__category">
+            <h3 class="skills__category-title">Frameworks &amp; Libraries</h3>
+            <ul class="skills__list">
+              <li class="skills__item">React</li>
+              <li class="skills__item">Node.js / Express</li>
+              <li class="skills__item">Next.js</li>
+              <li class="skills__item">Tailwind CSS</li>
+            </ul>
+          </div>
+
+          <div class="skills__category">
+            <h3 class="skills__category-title">Tools &amp; Platforms</h3>
+            <ul class="skills__list">
+              <li class="skills__item">Git &amp; GitHub</li>
+              <li class="skills__item">Docker</li>
+              <li class="skills__item">Linux / Unix</li>
+              <li class="skills__item">VS Code</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests -->
+    <section class="section interests" id="interests">
+      <div class="section__container">
+        <h2 class="section__heading heading-gradient">Interests</h2>
+
+        <div class="interests__grid">
+          <div class="interests__item">
+            <span class="interests__icon" aria-hidden="true">⚙️</span>
+            <h3 class="interests__title">Open Source</h3>
+            <p class="interests__desc">Contributing to and maintaining open-source projects.</p>
+          </div>
+          <div class="interests__item">
+            <span class="interests__icon" aria-hidden="true">🎮</span>
+            <h3 class="interests__title">Game Dev</h3>
+            <p class="interests__desc">Building small indie games and interactive experiences.</p>
+          </div>
+          <div class="interests__item">
+            <span class="interests__icon" aria-hidden="true">📖</span>
+            <h3 class="interests__title">Reading</h3>
+            <p class="interests__desc">Technical books, sci-fi novels, and design theory.</p>
+          </div>
+          <div class="interests__item">
+            <span class="interests__icon" aria-hidden="true">🎵</span>
+            <h3 class="interests__title">Music</h3>
+            <p class="interests__desc">Listening to and occasionally producing electronic music.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects" id="projects">
+      <div class="section__container">
+        <h2 class="section__heading heading-gradient">Past Projects</h2>
+
+        <!-- Template 1: With Images -->
+        <h3 class="projects__template-label">Featured (with visuals)</h3>
+        <ul class="projects__list projects__list--visual" aria-label="Featured projects with images">
+
+          <li class="project-card project-card--visual">
+            <div class="project-card__image-wrap">
+              <div class="project-card__image-placeholder" aria-label="Project screenshot placeholder">
+                <span class="project-card__image-text">Project Preview</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h4 class="project-card__title">Personal Site v1</h4>
+              <p class="project-card__desc">
+                The first iteration of this portfolio built with vanilla HTML, CSS, and JavaScript.
+                Focused on minimal design and fast load times.
+              </p>
+              <ul class="project-card__tech">
+                <li class="project-card__tech-item">HTML</li>
+                <li class="project-card__tech-item">CSS</li>
+                <li class="project-card__tech-item">JavaScript</li>
+              </ul>
+              <a class="project-card__link btn btn--outline" href="https://liamw.fyi" target="_blank" rel="noopener noreferrer">
+                View Project ↗
+              </a>
+            </div>
+          </li>
+
+          <li class="project-card project-card--visual">
+            <div class="project-card__image-wrap">
+              <div class="project-card__image-placeholder" aria-label="Project screenshot placeholder">
+                <span class="project-card__image-text">Project Preview</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h4 class="project-card__title">API Dashboard</h4>
+              <p class="project-card__desc">
+                A real-time dashboard consuming multiple REST APIs, featuring live data
+                visualisation and user-configurable widgets.
+              </p>
+              <ul class="project-card__tech">
+                <li class="project-card__tech-item">React</li>
+                <li class="project-card__tech-item">Node.js</li>
+                <li class="project-card__tech-item">Chart.js</li>
+              </ul>
+              <a class="project-card__link btn btn--outline" href="#projects" target="_blank" rel="noopener noreferrer">
+                View Project ↗
+              </a>
+            </div>
+          </li>
+
+        </ul>
+
+        <!-- Template 2: Text Only -->
+        <h3 class="projects__template-label">All Projects (text only)</h3>
+        <ul class="projects__list projects__list--text" aria-label="All projects text list">
+
+          <li class="project-item">
+            <div class="project-item__header">
+              <h4 class="project-item__title">CLI Task Manager</h4>
+              <span class="project-item__year">2024</span>
+            </div>
+            <p class="project-item__desc">
+              A terminal-based task manager with tagging, priorities, and JSON persistence.
+              Supports full CRUD operations with a friendly command-line interface.
+            </p>
+            <ul class="project-item__tech">
+              <li class="project-item__tech-tag">Python</li>
+              <li class="project-item__tech-tag">Click</li>
+              <li class="project-item__tech-tag">JSON</li>
+            </ul>
+            <a class="project-item__link" href="#projects" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+          </li>
+
+          <li class="project-item">
+            <div class="project-item__header">
+              <h4 class="project-item__title">Weather App</h4>
+              <span class="project-item__year">2023</span>
+            </div>
+            <p class="project-item__desc">
+              A browser extension that overlays live weather data on new-tab pages using
+              the OpenWeatherMap API, with animated weather icons.
+            </p>
+            <ul class="project-item__tech">
+              <li class="project-item__tech-tag">JavaScript</li>
+              <li class="project-item__tech-tag">WebExtensions API</li>
+              <li class="project-item__tech-tag">OpenWeatherMap</li>
+            </ul>
+            <a class="project-item__link" href="#projects" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+          </li>
+
+          <li class="project-item">
+            <div class="project-item__header">
+              <h4 class="project-item__title">Markdown Blog Engine</h4>
+              <span class="project-item__year">2023</span>
+            </div>
+            <p class="project-item__desc">
+              A static site generator that converts a folder of Markdown files into a
+              fully styled blog with syntax highlighting and tag filtering.
+            </p>
+            <ul class="project-item__tech">
+              <li class="project-item__tech-tag">Node.js</li>
+              <li class="project-item__tech-tag">Marked</li>
+              <li class="project-item__tech-tag">Prism.js</li>
+            </ul>
+            <a class="project-item__link" href="#projects" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__text">© 2025 Liam W · <a class="footer__link" href="https://liamw.fyi">liamw.fyi</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
