@@ -1,5 +1,5 @@
 # tynker-byte
-Welcome to TynkerByte, my home page where I will host all of mt projects and experiences.
+Welcome to TynkerByte, my home page where I will host all of my projects and experiences.
 
 You are free to read through this code and use it as inspiration for your own project, as long as you mention this site somewhere in your project.
 
